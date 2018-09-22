@@ -1,8 +1,8 @@
-""" Description """
+""" Description """  
 
 ___title___  = "hackme2"
 ___license___ = "MIT"
-___dependencies___ = ["sleep", "app", "ugfx_helper", "buttons", "homescreen"]
+___dependencies___ = ["sleep", "app", "ugfx_helper", "buttons", "homescreen" ]
 ___categories___ = ["Homescreens"]
 
 import wifi, ugfx, http, os, time, sleep, ugfx_helper, math
@@ -44,8 +44,10 @@ ugfx.orientation(270)
 
 def go():
     ugfx.clear(ugfx.WHITE)
-draw_name()
+draw_name() # yjis displays names ei print 
 
-image = http.get("https://wiki.leedshackspace.org.uk/w/images/thumb/5/50/LHS-Colour-glyph.svg/200px-LHS-Colour-glyph.svg.png").raise_for_status().content
-ugfx.display_image(25,10,bytearray(image)) #first number is X vaule and second is Y vaule
+image = ("hackme2/LHS.png")
+
+ugfx.display_image(35, 15,image)
+
 
