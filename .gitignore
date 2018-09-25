@@ -1,0 +1,10 @@
+build-*
+installs/
+tools/
+*.o
+*.obj
+*.out
+*.map
+*.bin
+*.dfu
+boards/sdk/defs.mk

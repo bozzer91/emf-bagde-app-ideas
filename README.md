@@ -1,1 +1,0 @@
-# emf-bagde-app-ideas
