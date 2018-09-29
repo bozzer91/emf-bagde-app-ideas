@@ -8,7 +8,7 @@ ___categories___ = ["Homescreens"]
 import wifi, ugfx, http, os, time, sleep, ugfx_helper, math
 
 ugfx.init()
-ugfx.clear()
+#ugfx.clear()
 
 from tilda import Buttons
 from homescreen import *
@@ -20,8 +20,10 @@ ugfx_helper.init()
 s = ugfx.Style()
 s.set_background(ugfx.BLACK)
 s.set_enabled([ugfx.BLUE, ugfx.html_color(0x800080), ugfx.html_color(0x800080), ugfx.html_color(0x800080)])
+
 ugfx.set_default_style(s)
 ugfx.clear(ugfx.BLACK)
+
 def draw_name():
     intro_text = "Hi! I'm"
     intro_height = 30
@@ -48,6 +50,6 @@ draw_name() # yjis displays names ei print
 
 image = ("hackme3/LHSG3.gif")
 
-ib = ugfx.Imagebox(0, 0, 240, 200, image, cache=1, parent=None, style=None)
+ib = ugfx.Imagebox(0, 0, 240, 200, image)
 
 
